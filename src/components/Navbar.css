@@ -1,0 +1,151 @@
+.navbar {
+  background-color: #1f4189;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  color: #ffffff;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  color: #76d839;
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+.subtitle {
+  color: #76d839;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+  transition: right 0.3s ease;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e5e7eb;
+}
+
+@media (min-width: 901px) {
+  .nav-link {
+    font-size: 1.5rem;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.1rem;
+  }
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+.hamburger .bar {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: #fff;
+  margin: 0.2rem 0;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 1rem 1.2rem;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    right: -100vw;
+    flex-direction: column;
+    background: #1f4189;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.08);
+    transition: right 0.3s ease;
+    z-index: 1050;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+} 
