@@ -91,7 +91,9 @@ function App() {
                 <div>🎯Higher Secondary (CBSE, ICSE, West Bengal Board)</div>
                 <div>🎯B.Sc(Chemistry) (All Universities)</div>
                 <div>🎯BE(Chem Eng.)</div>
-                <div>🎯NET, GATE, IIT-JAM, TIFR, IISc for PhD entrance exam</div>
+                <div>
+                  🎯NET, GATE, IIT-JAM, TIFR, IISc for PhD entrance exam
+                </div>
                 <div style={{ height: "0.7em" }}></div>
                 <div
                   style={{
@@ -461,35 +463,7 @@ function App() {
             )}
           </main>
           <aside className="info-boxes">
-            <div className="info-box red">
-              🎯 Learn Tricks to Crack Competitive Exams
-            </div>
-            <div className="info-box blue">📘 Learn Methods to Make Score</div>
-            <div className="info-box green">
-              📝 Questions & Answers Available
-            </div>
-            <div className="info-box orange">
-              📞 Call/Text me for Chemistry Coaching
-            </div>
-            <div className="sticker-blink-wrapper">
-              <img src={sticker} alt="sticker" className="sticker-blink" />
-            </div>
-            <a
-              href="https://wa.me/919681071873"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="info-box violet blink-effect"
-              style={{ textDecoration: "none", display: "block" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.3em",
-                  verticalAlign: "middle",
-                  marginRight: "0.5em",
-                }}
-              />
-              919681071873
-            </a>
+            {/* Move yellow and pink to top */}
             <div className="info-box pink">
               🚀 Promo Class Started
               <br />
@@ -509,16 +483,72 @@ function App() {
               <br />
               B.Sc(OrganicChemistry) GATE, NET(Chemistry)
             </div>
+
+            {/* This stays where it was */}
+            <div className="info-box orange">
+              📞 Call/Text me for Chemistry Coaching
+            </div>
+
+            {/* Sticker stays where it was */}
+            <div className="sticker-blink-wrapper">
+              <img src={sticker} alt="sticker" className="sticker-blink" />
+            </div>
+
+            {/* WhatsApp link stays */}
+            <a
+              href="https://wa.me/919681071873"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="info-box violet blink-effect"
+              style={{ textDecoration: "none", display: "block" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.3em",
+                  verticalAlign: "middle",
+                  marginRight: "0.5em",
+                }}
+              />
+              919681071873
+            </a>
+            {/* These 3 boxes go at the bottom now */}
+            <div className="info-box red">
+              🎯 Learn Tricks to Crack Competitive Exams
+            </div>
+            <div className="info-box blue">📘 Learn Methods to Make Score</div>
+            <div className="info-box green">
+              📝 Questions & Answers Available
+            </div>
           </aside>
-          <div className="competitive-exam-box">
-            🎯 Learn Tricks to Crack Competitive Exams
+
+          {/* Mobile view info boxes */}
+          <div className="promo-box">
+            🚀 Promo Class Started
+            <br />
+            <a
+              href="https://www.youtube.com/watch?v=fqQ7g-ycHXY"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#fff", fontWeight: 600 }}
+            >
+              🎥Promo Class-1-Class XII—JEE/NEET-Unit-1-Gas Laws-Pressure
+            </a>
           </div>
-          <div className="score-box">📘 Learn Methods to Make Score</div>
-          <div className="qna-box">📝 Questions & Answers Available</div>
+
+          <div className="course-box">
+            📢 Ongoing Course 2026-27 Exam for
+            <br />
+            JEE Main/Advance, WBJEE, WBHS, CBSE, ICSE
+            <br />
+            B.Sc(OrganicChemistry) GATE, NET(Chemistry)
+          </div>
+
           <div className="ph-box">📞 Call/Text me for Chemistry Coaching</div>
+
           <div className="sticker-blink-wrapper">
             <img src={sticker} alt="sticker" className="sticker-blink" />
           </div>
+
           <a
             href="https://wa.me/919681071873"
             target="_blank"
@@ -535,25 +565,12 @@ function App() {
             />
             919681071873
           </a>
-          <div className="promo-box">
-            🚀 Promo Class Started
-            <br />
-            <a
-              href="https://www.youtube.com/watch?v=fqQ7g-ycHXY"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#fff", fontWeight: 600 }}
-            >
-              🎥Promo Class-1-Class XII—JEE/NEET-Unit-1-Gas Laws-Pressure
-            </a>
+
+          <div className="competitive-exam-box">
+            🎯 Learn Tricks to Crack Competitive Exams
           </div>
-          <div className="course-box">
-            📢 Ongoing Course 2026-27 Exam for
-            <br />
-            JEE Main/Advance, WBJEE, WBHS, CBSE, ICSE
-            <br />
-            B.Sc(OrganicChemistry) GATE, NET(Chemistry)
-          </div>
+          <div className="score-box">📘 Learn Methods to Make Score</div>
+          <div className="qna-box">📝 Questions & Answers Available</div>
         </div>
       </div>
       <footer className="site-footer">
