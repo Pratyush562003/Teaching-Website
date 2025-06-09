@@ -578,7 +578,7 @@ function App() {
         <div>
           WEBSITE DESIGNER —
           <a
-            href="https://personal-portfolio-orcin-six.vercel.app/"
+            href="https://pratyush-portfolio-rust.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
