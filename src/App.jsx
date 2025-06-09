@@ -583,7 +583,7 @@ function App() {
             rel="noopener noreferrer"
             className="footer-link"
           >
-            https://personal-portfolio-orcin-six.vercel.app/
+            https://pratyush-portfolio-rust.vercel.app/
           </a>
         </div>
         <div>© www.hellosir.co.in | All Rights Reserved.</div>
